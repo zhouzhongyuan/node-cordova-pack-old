@@ -393,35 +393,16 @@ function pack(cfg){
         cfg.winston.info('begin to add plugin');
         return new Promise(function (resolve, reject) {
             cordova.plugin('add', plugin, variable,{'verbose': true},function (err, data) {
+                console.log(plugin, variable);
                 if (err) {
                     console.error(err.stack)
                     reject(new Error(err))
                 }
-                cfg.winston.info(`add plugin ${plugin} success`);
+                cfg.winston.info(`添加插件 ${plugin} 成功`);
                 resolve(data);
             });
         });
     };
-    o.removePlugin = function(){
-        return new Promise(function (resolve, reject) {
-            cordova.plugin('ls',function(err,data){
-                cfg.winston.info(data);
-                if( data.length != 0){
-                    cordova.plugin('remove', data,function (err, data) {
-                        if (err) {
-                            reject(new Error(err))
-                        }
-                        cfg.winston.info('plugin remove ','success');
-                        resolve(data);
-                    });
-                }else {
-                    resolve('no plugin');
-                }
-
-            })
-        });
-    };
-
     o.buildExtras = function(){
         return new Promise(function (resolve, reject) {
             cfg.winston.info('add build extras begin');
