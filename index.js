@@ -426,7 +426,6 @@ function pack(cfg){
         return new Promise(function (resolve, reject) {
             cfg.winston.info('add build extras begin');
             var lintOptions =
-                "buildscript { dependencies { classpath 'com.android.tools.build:gradle:2.0.0' } }\n" +
                 "android {\n" +
                 "    lintOptions {\n" +
                 "        disable 'MissingTranslation'\n" +

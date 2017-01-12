@@ -1,43 +1,4 @@
 {
-  "_args": [
-    [
-      "cordova-pack-old@^0.1.0",
-    ]
-  ],
-  "_from": "cordova-pack@>=0.1.0 <0.2.0",
-  "_id": "cordova-pack@0.1.1",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/cordova-pack",
-  "_nodeVersion": "5.10.1",
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/cordova-pack-0.1.1.tgz_1464596125887_0.8997756799217314"
-  },
-  "_npmUser": {
-    "email": "yawenzhongyuan@gmail.com",
-    "name": "zhongyuan"
-  },
-  "_npmVersion": "3.8.3",
-  "_phantomChildren": {},
-  "_requested": {
-    "name": "cordova-pack",
-    "raw": "cordova-pack@^0.1.0",
-    "rawSpec": "^0.1.0",
-    "scope": null,
-    "spec": ">=0.1.0 <0.2.0",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_shasum": "c896466c9fe72c2766795cd4926571545d221251",
-  "_shrinkwrap": null,
-  "_spec": "cordova-pack@^0.1.0",
-  "_where": "/Users/bokeadmin/project/ios_compile/pack2",
-  "bugs": {
-    "url": "https://github.com/BokeFE/cordova-pack/issues"
-  },
   "dependencies": {
     "cheerio": "^0.20.0",
     "co": "^4.6.0",
@@ -52,25 +13,14 @@
   "description": "其中的依赖Cordova-lib需要修改文件才能正确使用打包功能",
   "devDependencies": {},
   "directories": {},
-  "dist": {
-    "shasum": "c896466c9fe72c2766795cd4926571545d221251",
-    "tarball": "https://registry.npmjs.org/cordova-pack/-/cordova-pack-0.1.1.tgz"
-  },
-  "gitHead": "974813eecd408b85fa9e84eeba808478ec6cf57f",
-  "homepage": "https://github.com/BokeFE/cordova-pack#readme",
-  "maintainers": [
-    {
-      "email": "yawenzhongyuan@gmail.com",
-      "name": "zhongyuan"
-    }
-  ],
-  "name": "cordova-pack",
+  "homepage": "https://github.com/zhouzhongyuan/node-cordova-pack-old#readme",
+  "name": "cordova-pack-old",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BokeFE/cordova-pack.git"
+    "url": "git+https://github.com/zhouzhongyuan/node-cordova-pack-old.git"
   },
   "scripts": {},
-  "version": "0.1.1"
+  "version": "0.2.1"
 }
