@@ -213,8 +213,6 @@ function pack(cfg){
             }
             //TODO access
             conf.addElement('access',{'origin':'cdvfile://*'});
-            //TODO content
-
             //TODO preference
             conf.addElement('preference',{'name':'WebViewBounce','value':'false'});
             conf.addElement('preference',{'name':'DisallowOverscroll','value':'true'});
@@ -256,6 +254,13 @@ function pack(cfg){
                         '<splash src="../../res/ios/Default-Landscape-736h.png" width="2208" height="1242"/>'+
                         '</platform>';
                     $('widget').append(splash);
+
+                    //content
+                    //<content src="index.html"/>
+                    if(o.appBuildType === 'debug'){
+                        $('content').attr('src','servicepath.html');
+                    }
+
                     fs.writeFile(o.configXML,$.xml(),function(err,data){
                         if (err) {
                             reject(new Error(err))
@@ -389,6 +394,9 @@ function pack(cfg){
         });
     };
     o.addPluginReal = function(plugin,variable){
+        console.log("#### 真正添加plugin");
+        console.log("#### pluginName: ", plugin);
+        console.log("#### 参数: ", variable);
         cfg.winston.info(plugin,variable);
         cfg.winston.info('begin to add plugin');
         return new Promise(function (resolve, reject) {

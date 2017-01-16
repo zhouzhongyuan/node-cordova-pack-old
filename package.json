@@ -2,7 +2,7 @@
   "dependencies": {
     "cheerio": "^0.20.0",
     "co": "^4.6.0",
-    "cordova-lib": "^6.4.0",
+    "cordova-lib": "6.0.0",
     "fs-extra": "^0.26.5",
     "plist": "^1.2.0",
     "pug": "^2.0.0-alpha7",
@@ -22,5 +22,5 @@
     "url": "git+https://github.com/zhouzhongyuan/node-cordova-pack-old.git"
   },
   "scripts": {},
-  "version": "0.3.1"
+  "version": "0.3.5"
 }
